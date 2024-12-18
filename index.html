@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Simple Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#upload">Upload Data</a></li>
+                <li><a href="#data">View Data</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to the simple website.</p>
+        </section>
+        <section id="upload">
+            <h2>Upload Data</h2>
+            <form id="uploadForm">
+                <input type="file" id="fileInput" accept=".txt,.csv" required>
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+        <section id="data">
+            <h2>View Data</h2>
+            <pre id="dataDisplay">No data uploaded yet.</pre>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Simple Website</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
